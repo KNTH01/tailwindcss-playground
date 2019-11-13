@@ -1,10 +1,8 @@
 # tailwindcss-playground
 
-> Personal Tailwind CSS playground
-
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
@@ -20,3 +18,11 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Credits
+
+[Tailwind UI](https://www.tailwindui.com/)
+
+Adam Wathan
+
+Steve Schoger

@@ -24,7 +24,7 @@
           Tailwind documentation
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/KevinNTH/tailwindcss-playground"
           target="_blank"
           class="btn hover:border-teal-600 ml-3"
         >
@@ -42,6 +42,17 @@
           {{ item.title }}
         </nuxt-link>
       </section>
+
+      <footer class="mt-32 mb-8">
+        <h3 class="font-semibold text-xl mb-1 text-gray-600">Credits</h3>
+        <a href="https://www.tailwindui.com" target="_blank">
+          <img
+            class="inline-block h-8"
+            src="https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/tailwindui-logo.svg"
+            alt="Tailwind UI"
+          />
+        </a>
+      </footer>
     </div>
   </div>
 </template>
