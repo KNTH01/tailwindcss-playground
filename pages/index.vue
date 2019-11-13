@@ -8,29 +8,40 @@
       <h2 class="text-xl font-semibold">
         Few sample of Tailwind components
       </h2>
-      <div class="flex justify-center my-16">
+      <section class="flex justify-center my-16">
         <a
           href="https://nuxtjs.org/"
           target="_blank"
-          class="px-3 py-2 border rounded hover:border-teal-600"
+          class="btn hover:border-teal-600"
         >
           Nuxt documentation
         </a>
         <a
           href="https://tailwindcss.com/"
           target="_blank"
-          class="px-3 py-2 border rounded hover:border-teal-600 ml-3"
+          class="btn hover:border-teal-600 ml-3"
         >
           Tailwind documentation
         </a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
-          class="px-3 py-2 border rounded hover:border-teal-600 ml-3"
+          class="btn hover:border-teal-600 ml-3"
         >
           GitHub
         </a>
-      </div>
+      </section>
+
+      <section>
+        <nuxt-link
+          v-for="item in menu"
+          :key="item.routeName"
+          :to="{ name: item.routeName }"
+          class="btn border-blue-400 hover:border-blue-600 text-blue-400 hover:text-blue-600"
+        >
+          {{ item.title }}
+        </nuxt-link>
+      </section>
     </div>
   </div>
 </template>
@@ -41,8 +52,18 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+
+  data() {
+    return {
+      menu: [{ title: 'Responsive menu', routeName: 'menu' }]
+    }
   }
 }
 </script>
 
-<style></style>
+<style>
+.btn {
+  @apply px-3 py-2 border rounded;
+}
+</style>
