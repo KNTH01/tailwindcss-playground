@@ -37,7 +37,7 @@
           v-for="item in menu"
           :key="item.routeName"
           :to="{ name: item.routeName }"
-          class="btn border-blue-400 hover:border-blue-600 text-blue-400 hover:text-blue-600"
+          class="mr-3 last:mr-0 btn border-blue-400 hover:border-blue-600 text-blue-400 hover:text-blue-600"
         >
           {{ item.title }}
         </nuxt-link>
@@ -56,7 +56,13 @@ export default {
 
   data() {
     return {
-      menu: [{ title: 'Responsive menu', routeName: 'menu' }]
+      menu: [
+        { title: 'Responsive menu', routeName: 'menu' },
+        {
+          title: 'Stripe-style animated vertical tabs',
+          routeName: 'stripe-style-animated-vertical-tabs'
+        }
+      ]
     }
   }
 }
