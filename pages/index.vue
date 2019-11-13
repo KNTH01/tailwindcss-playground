@@ -1,21 +1,32 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="text-center mt-16">
+    <div class="">
       <logo />
-      <h1 class="title">
-        tailwindcss-playground
+      <h1 class="mt-8 mb-4 text-4xl font-semibold text-blue-800">
+        Tailwind CSS Playground
       </h1>
-      <h2 class="subtitle">
-        Personal Tailwind CSS playground
+      <h2 class="text-xl font-semibold">
+        Few sample of Tailwind components
       </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
+      <div class="flex justify-center my-16">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          class="px-3 py-2 border rounded hover:border-teal-600"
+        >
+          Nuxt documentation
+        </a>
+        <a
+          href="https://tailwindcss.com/"
+          target="_blank"
+          class="px-3 py-2 border rounded hover:border-teal-600 ml-3"
+        >
+          Tailwind documentation
         </a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
-          class="button--grey"
+          class="px-3 py-2 border rounded hover:border-teal-600 ml-3"
         >
           GitHub
         </a>
@@ -34,40 +45,4 @@ export default {
 }
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>
