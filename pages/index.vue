@@ -1,6 +1,6 @@
 <template>
-  <div class="text-center mt-16">
-    <div class="">
+  <div class="container mx-auto px-4">
+    <div class="text-center mt-16">
       <logo />
       <h1 class="mt-8 mb-4 text-4xl font-semibold text-blue-800">
         Tailwind CSS Playground
