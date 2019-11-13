@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200" style="min-height: 640px;">
+  <div class="bg-gray-200" style="min-height: 100vh;">
     <div id="nav" class="bg-white shadow">
       <div class="md:px-8">
         <nav
