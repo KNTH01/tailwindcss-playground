@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto px-4">
-    <div class="text-center mt-16">
+  <div class="container px-4 mx-auto">
+    <div class="mt-16 text-center">
       <logo />
       <h1 class="mt-8 mb-4 text-4xl font-semibold text-blue-800">
         Tailwind CSS Playground
@@ -19,14 +19,14 @@
         <a
           href="https://tailwindcss.com/"
           target="_blank"
-          class="btn hover:border-teal-600 ml-3"
+          class="ml-3 btn hover:border-teal-600"
         >
           Tailwind documentation
         </a>
         <a
           href="https://github.com/KevinNTH/tailwindcss-playground"
           target="_blank"
-          class="btn hover:border-teal-600 ml-3"
+          class="ml-3 btn hover:border-teal-600"
         >
           GitHub
         </a>
@@ -37,14 +37,14 @@
           v-for="item in menu"
           :key="item.routeName"
           :to="{ name: item.routeName }"
-          class="mr-3 last:mr-0 btn border-blue-400 hover:border-blue-600 text-blue-400 hover:text-blue-600"
+          class="mr-3 text-blue-400 border-blue-400 last:mr-0 btn hover:border-blue-600 hover:text-blue-600"
         >
           {{ item.title }}
         </nuxt-link>
       </section>
 
       <footer class="mt-32 mb-8">
-        <h3 class="font-semibold text-xl mb-1 text-gray-600">Credits</h3>
+        <h3 class="mb-1 text-xl font-semibold text-gray-600">Credits</h3>
         <a href="https://www.tailwindui.com" target="_blank">
           <img
             class="inline-block h-8"
@@ -72,6 +72,10 @@ export default {
         {
           title: 'Stripe-style animated vertical tabs',
           routeName: 'stripe-style-animated-vertical-tabs'
+        },
+        {
+          title: 'Kanban',
+          routeName: 'kanban'
         }
       ]
     }

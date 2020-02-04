@@ -1053,21 +1053,17 @@
         </div>
       </div>
     </div>
-
-    <script src="https://unpkg.com/vue@^2.6/dist/vue.min.js"></script>
-    <script>
-      new Vue({
-        el: '#app',
-        data: {
-          sidebarOpen: false
-        }
-      })
-    </script>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      sidebarOpen: false
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>
